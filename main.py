@@ -1,7 +1,7 @@
 # !путь до интерпритатора python, можно узнать командой "which python3"
 # crontab -e - редактировать крон 
 # crontab -ls - процессы крона для пользователя 
-# 0 4 * * * python3 pwd - крон будет запускать скрипт каждые 4 часа, нужно прописать абсолютный путь до скрипта
+# 0 */4 * * * python3 pwd - крон будет запускать скрипт каждые 4 часа, нужно прописать абсолютный путь до скрипта
 from config import *
 from datetime import datetime
 from selenium import webdriver

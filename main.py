@@ -2,6 +2,7 @@
 # crontab -e - редактировать крон 
 # crontab -ls - процессы крона для пользователя 
 # 0 */4 * * * python3 pwd - крон будет запускать скрипт каждые 4 часа, нужно прописать абсолютный путь до скрипта
+# на забудь прописать переменные окружения в к кронфайле (почту и пароль)
 from config import *
 from datetime import datetime
 from selenium import webdriver

@@ -38,7 +38,7 @@ class ResumeLifter():
             #Кликаем по кнопке "Вход"
             try:
                 driver.implicitly_wait(10)
-                enter_btn = driver.find_element(by=By.XPATH,value='/html/body/div[7]/div/div[1]/div[1]/div/div[6]/a')
+                enter_btn = find_element(by=By.LINK_TEXT, value='Войти')
                 enter_btn.click()
                 self.print_to_file('[!] - Кнопка "Вход" нажата.')
             except Exception as error:

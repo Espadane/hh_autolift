@@ -10,5 +10,5 @@ if not hh_password:
     exit("Error. User password not found")
 
 user_agent = []
-ex_pass = '/absolute/path/to/chromedriver/' #Абсолютный путь до веб-драйвера, можно узнать находясь в каталоге командой "pwd"
+ex_path = '/absolute/path/to/chromedriver/' #Абсолютный путь до веб-драйвера, можно узнать находясь в каталоге командой "pwd"
 #возможно придется дать права драйверу на исполнение. Делается командой chmod 755 chromedriver - находясь в каталоге

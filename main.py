@@ -18,7 +18,7 @@ class ResumeLifter():
         self.options.add_experimental_option('excludeSwitches', ['enable-logging']) #loging off
         self.options.add_argument('--headless') #headless mode
         self.options.add_argument('--no-sandbox')
-        self.driver = webdriver.Chrome(executable_path=ex_pass, 
+        self.driver = webdriver.Chrome(executable_path=ex_path, 
                     options=self.options)
     @staticmethod
     def print_to_file(message):

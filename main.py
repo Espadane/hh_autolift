@@ -47,8 +47,10 @@ class ResumeLifter():
             # Клик по кнопке войти с паролем
             try:
                 driver.implicitly_wait(10)
-                enter_with_pass_btn = driver.find_elements(by=By.TAG_NAME,value='button')[11]
-                enter_with_pass_btn.click()
+                tag_btns = driver.find_elements(by=By.TAG_NAME,value='button')
+                for btn in tag_btns:
+                    if btn.text == 'Войти с паролем':
+                        btn.click()
                 self.print_to_file('[!] - Кликнули на кнопку "Войти по паролю".')
             except Exception as error:
                 self.print_to_file(f'[X] - Ошибка: клик по кнопке "Войти с паролем" не удался.\n{error}\n')
